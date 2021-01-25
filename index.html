@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Tic Tac Toe very popular game. It's an online game, artifitial intelligence integrated. Fully jquery javascript css html base dynamic with nice design." />
+<title>Tic Tac Toe online tic-tac-toe game play by Fahim Iqbal</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-u.js"></script>
+<script type="text/javascript" src="js/jquery-e.js"></script>
+<script type="text/javascript" src="js/jquery-t.js"></script>
+<script type="text/javascript" src="js/jquery-r.js"></script>
+
+<script type="text/javascript">
+
+</script>
+<!--<script type="text/javascript" src="js/tik_tok_toe_min.js"></script>-->
+<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+</head>
+
+<body class="">
+<div class="main_playing_div">
+	<div class="header_bg">
+    </div><!--.header_bg-->
+    <div class="playing_div">
+    	<div class="header">
+        	<div class="logo">
+            	<span>fahim iqbal</span>
+                <span class="color" id="blue">
+                	<img id="butterfly-blue" class="still" src="images/butterfly-blue.png" />
+                </span><!--#purple-->
+            </div><!--.logo-->
+        	<div class="developed_by">
+        		<img id="developed_by_img" src="images/developed_by_ps.png" />
+       		</div><!--.developed_by-->
+            <span class="color" id="green">
+              	<img id="butterfly-green" class="still" src="images/butterfly-green.png" />
+           	</span><!--#purple-->
+        </div><!--.header-->
+    	<div class="inner_playing_div">
+        	<div class="right_sidebar">
+                <div id="clock1">
+                    <div class="display">
+                        <span class="hr">0</span>
+                        <span class="min">00</span>
+                        <span> </span>:
+                        <span class="sec">00</span>
+                        <span class="mili">00</span>
+                    </div><!--.display-->
+                </div><!--#clock1-->
+                <div class="player_names">
+                	<div class="player_1_name">
+                    </div><!--.player_1_name-->
+                    <div class="vs">
+                    vs
+                    </div><!--.vs-->
+                    <div class="player_2_name">
+                    </div><!--.player_2_name-->
+                </div><!--.player_names-->
+                <div class="restart_div">
+                    <span class="restart">RESTART</span>
+                </div><!--.restart_div-->
+           	</div><!--.right_sidebar-->
+            <div class="tik_tok_div">
+                <div id="31" class="square"></div>
+                <div id="32" class="square"></div>
+                <div id="33" class="square"></div>
+                <div id="21" class="square"></div>
+                <div id="22" class="square"></div>
+                <div id="23" class="square"></div>
+                <div id="11" class="square"></div>
+                <div id="12" class="square"></div>
+                <div id="13" class="square"></div>
+            </div><!--.tik_tok_div-->
+            <div class="switch_div">
+
+            </div><!--.switch_div-->
+       	</div><!--.inner_playing_div-->
+    </div><!--.playing_div-->
+    <div class="footer">
+    	<div class="footer_auto">
+        <span class="color" id="red">
+          	<img id="butterfly-red" class="still" src="images/butterfly-red.png" />
+       	</span><!--#red-->
+        	<span class="copyright">&copy; Copyright Fahim Iqbal</span>
+            <span class="dedicated">Dedicated To Raise IT Solutions Family
+            	<span class="color" id="purple">
+                	<img id="butterfly-purple" class="still" src="images/butterfly-purple.png" />
+                </span><!--#purple-->
+            </span>
+        </div><!--.footer_auto-->
+    </div><!--.footer-->
+</div><!--.main_playing_div-->
+
+<div class="debug">
+</div><!--.debug-->
+
+<div id="overlay_1">
+	<div class="overlay_1_in">
+    	<div class="fahim_iqbal intro_title">
+        	Fahim Iqbal
+        </div><!--.intro_title-->
+        <div class="presents intro_title">
+        	Presents
+        </div><!--.intro_title-->
+        <div class="play_tic_tac_toe intro_title">
+        	Tic Tac Toe
+        </div><!--.play_tic_tac_toe-->
+        <div class="enter_name intro_title">
+        	Enter Your Name
+        </div><!--.enter_name-->
+        <div class="enter_name_input intro_title">
+        	<input id="your_name" value=""  />
+            <img id="continue" src="images/continue_button.png"  />
+            <div class="name_input_error">Please Enter Name</div>
+        </div><!--.enter_name_input-->
+        
+        <div class="first_move intro_title">
+        	First Move -
+        </div><!--.first_move-->
+        <div class="first_move_option intro_title">
+            <div class="you_first">You</div>
+            <div class="pc_first">PC</div>
+        </div><!--.first_move_option-->
+    </div><!--.overlay_1_in-->
+</div><!--.overlay-->
+
+<div id="overlay_2">
+	<div class="game_result_div">
+    	<span clas="result_emotion"></span>
+        <span class="game_result"></span>
+        <span class="result_emotion"></span>
+        <span class="play_again">Play Again</span>
+        <span class="quit">Quit</span>
+        <span class="again_pop">
+        	<span class="again_em">
+            </span><!--.again_em-->
+            <span class="again_dlg">
+            	"Another challange...?!"
+            </span><!--.again_dlg-->
+        </span><!--.again_pop-->
+        <span class="quit_pop">
+        	<span class="quit_em">
+            </span><!--.quit_em-->
+            <span class="quit_dlg">
+            	<span style="width: 100%;">"Winners never quit...</span> 
+                <span style="padding-left:45px;">quiters never win..."</span>
+            </span><!--.quit_dlg-->
+        </span><!--.quit_pop-->
+  	</div><!--.game_result_div-->
+</div><!--#overlay_2-->
+	<div class="overlay_3_wrapper">
+    </div><!--.overlay_3_wrapper-->
+<div id="overlay_3">
+	 
+</div><!--.overlay_3-->
+<div class="butterflys">
+	<img id="blue-butterfly-live" class="live" src="images/butterfly-blue.gif" />
+    <img id="blue-butterfly-still" class="still" src="images/butterfly-blue.png" />
+    <img id="green-butterfly-live" class="live" src="images/butterfly-green.gif" />
+    <img id="green-butterfly-still" class="still" src="images/butterfly-green.png" />
+    <img id="purple-butterfly-live" class="live" src="images/butterfly-purple.gif" />
+    <img id="purple-butterfly-still" class="still" src="images/butterfly-purple.png" />
+    <img id="red-butterfly-live" class="live" src="images/butterfly-red.gif" />
+    <img id="red-butterfly-still" class="still" src="images/butterfly-red.png" />
+</div><!--.butterflys-->
+
+<div class="count_down">
+	<img src="images/loading.gif" />
+</div><!--.count_down-->
+<span class="clr" style="display:none">
+</span>
+
+</body>
+
+<script type="text/javascript" src="js/jqueryrtt.js"></script>
+
+</html>
